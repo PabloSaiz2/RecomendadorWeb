@@ -23,9 +23,4 @@ public class ProductController {
 		modelAndView.addObject("products", service.getAll());
 		return modelAndView;
 	}
-	@GetMapping("/loadProducts")
-	public String load() {
-		return "Did load products to the database? "+this.service.loadInDatabase();
-	}
-	
 }
