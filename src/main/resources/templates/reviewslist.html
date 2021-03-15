@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}">
+    <meta name="viewport"charset="utf-8">
+    <title>Gift Recommender</title>
+  </head>
+  <body>
+    <form th:action="@{/logout}" method="post">
+            <button type="submit" class="btn btn-primary">Logout</button>
+    </form>
+     <p><a th:href="@{/products}" class="badge badge-success">Go to products</a></p>
+	<div class = "overflow-auto" style="max-height: 500px">
+    <table class = table>
+    <thead class = "thead-dark">
+    <tr>
+    <th>Name:</th>
+    <th>Rating:</th>
+    <th>Text:</th>
+    <th>Product:</th>
+    </tr>
+    </thead>
+    <th:block th:each="review :${reviews}">
+    <tr>
+    <th>
+    <h1 th:text ="${review.reviewer.username}"></h1>
+    </th>
+    <th>
+    <h1 th:text = "${review.rating}"></h1>
+	</th>
+	<th>
+	 <h1 th:text = "${review.message}"></h1>
+	</th>
+	<th>
+	 <h1 th:text = "${review.reviewed_product.name}"></h1>
+	</th>
+	</tr>
+    <th:block>
+    </table>
+    </div>
+  </body>
+</html>

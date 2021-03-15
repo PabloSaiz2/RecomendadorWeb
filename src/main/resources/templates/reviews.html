@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../static/css/bootstrap.css"
+	th:href="@{/css/bootstrap.css}">
+<title>Reviews</title>
+</head>
+<body>
+ 	<p><a th:href="@{/products}" class="badge badge-primary">Go back</a></p>
+	<h1>Review</h1>
+	<h1 class="text-center">Review form</h1>
+	<div class="d-flex justify-content-center mx-auto w-25 p-3" style="background-color: #eee;">
+	<form class="" action="#" th:action="@{/review/}+${productName}"
+		th:object="${reviewForm}" method="post">
+		<p>Rate:</p> <input type="number" class="form-control" th:field="*{rating}" />
+		<p>Text:</p> <input type="text" class="form-control" th:field="*{text}" /> <small class="form-text text-muted">El rating debe ser 0-5</small>
+		
+		  <div style="text-align:center">
+		<button type="submit" class="btn btn-primary">Rate</button>
+		</div>
+	</form>
+	
+	
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../static/css/bootstrap.css"
+	th:href="@{/css/bootstrap.css}">
+<title>Sign Up</title>
+</head>
+<body>
+	<h1>Sign Up Form</h1>
+	<p class="text-center w-"><a href="/" class="badge badge-primary ">Home</a></p>
+	<h1 class="text-center">Please complete this form</h1>
+	<div class="d-flex justify-content-center mx-auto w-25 p-3" style="background-color: #eee;">
+	<form class="" action="#" th:action="@{/signup}"
+		th:object="${signUpForm}" method="post">
+		<div  th:if="${success == false}" class="alert alert-danger" role="alert">
+   		Invalid form
+		</div>
+		<p>Username:</p>
+		<input type="text" class="form-control" th:field="*{username}"/>
+		<p>Password:</p>
+		<input type="password" class="form-control" name ="password1" th:field="*{password1}"/>
+		<p>Repeat password:</p>
+		<input type="password" class="form-control" name = "password2"th:field="*{password2}"/>
+		<h1>Additional data:</h1>
+		<p>Age:</p>
+		<input type="number" class="form-control" th:field="*{ageUser}" />
+		<p>Hobbies:</p>
+		<input type="text" class="form-control" th:field="*{hobbies}" /> <small
+			class="form-text text-muted">Please write the hobbies
+			separated by a comma</small>
+		<p>Language:</p>
+		<input type="text" class="form-control" th:field="*{language}" />
+		<p>Upper bound budget:</p>
+		<input type="number" class="form-control" th:field="*{upperBound}" />
+		<p>Lower bound budget:</p>
+		<input type="number" class="form-control" th:field="*{lowerBound}" />
+		<button type="submit" class="btn btn-primary">Sign Up!</button>
+	</form>
+	
+</div>
+</body>
+</html>

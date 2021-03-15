@@ -1,0 +1,323 @@
+{
+   "data": [
+      {
+         "data": [
+         {
+			"name": "Pages",
+			"detail": "229"        
+         },
+         {
+         	"name": "Author",
+			"detail": "Arturo Perez Reverte"  
+         }
+         ],
+         "type": "Detail",
+         "price": 21,
+         "name": "Reverte:Alatriste:Sol-de-Breda",
+         "rating": 4,
+         "language": "Spanish",
+         "category": "Books",
+         "age": 16
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 7,
+         "name": "Interstellar",
+         "rating": 4,
+         "language": "English",
+         "category": "Movies",
+         "age": 12
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 20,
+         "name": "Europa-Universalis-IV",
+         "rating": 4,
+         "language": "English",
+         "category": "Videogames",
+         "age": 12
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 150,
+         "name": "Sony-Alpha-50",
+         "rating": 4,
+         "language": "English",
+         "category": "Photography",
+         "age": 7
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 14,
+         "name": "DOOM",
+         "rating": 5,
+         "language": "English",
+         "category": "Videogames",
+         "age": 18
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 220,
+         "name": "ASUS-Laptop-Medium",
+         "rating": 4,
+         "language": "English",
+         "category": "Electronics",
+         "age": 7
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 20,
+         "name": "Horizon-Zero-Dawn",
+         "rating": 3,
+         "language": "English",
+         "category": "Videogames",
+         "age": 16
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 1,
+         "name": "Chip:7400",
+         "rating": 3,
+         "language": "English",
+         "category": "Electronics",
+         "age": 12
+      },
+      {
+         "data": [
+         {
+			"name": "Pages",
+			"detail": "500"        
+         },
+         {
+         	"name": "Author",
+			"detail": "Isaac Asimov"  
+         }
+         ],
+         "type": "Detail",
+         "price": 31,
+         "name": "Asimov:Trilogia-de-la-fundacion",
+         "rating": 5,
+         "language": "Spanish",
+         "category": "Books",
+         "age": 12
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 7,
+         "name": "The-Martian",
+         "rating": 3,
+         "language": "English",
+         "category": "Movies",
+         "age": 7
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 15,
+         "name": "Thomas-Sowell:Economia-Basica",
+         "rating": 3,
+         "language": "Spanish",
+         "category": "Books",
+         "age": 12
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 25,
+         "name": "Crusader-Kings-2",
+         "rating": 4,
+         "language": "English",
+         "category": "Videogames",
+         "age": 16
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 20,
+         "name": "Metal-Gear-Solid:Snake-eater",
+         "rating": 4,
+         "language": "English",
+         "category": "Videogames",
+         "age": 16
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 600,
+         "name": "Sony-TV",
+         "rating": 4,
+         "language": "English",
+         "category": "Electronics",
+         "age": 7
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 31,
+         "name": "Hobbes:Leviathan",
+         "rating": 4,
+         "language": "English",
+         "category": "Books",
+         "age": 18
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 25,
+         "name": "Bloodborne",
+         "rating": 4,
+         "language": "English",
+         "category": "Videogames",
+         "age": 16
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 2,
+         "name": "Paulaner",
+         "rating": 4,
+         "language": "Spanish",
+         "category": "Beer",
+         "age": 18
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 15,
+         "name": "Starcraft-2",
+         "rating": 3,
+         "language": "English",
+         "category": "Videogames",
+         "age": 12
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 30,
+         "name": "Juan-Pro:La-construccion-del-estado-en-Espania",
+         "rating": 5,
+         "language": "Spanish",
+         "category": "Books",
+         "age": 16
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 7,
+         "name": "El-senior-de-los-anillos:Las-dos-torres",
+         "rating": 4,
+         "language": "English",
+         "category": "Movies",
+         "age": 12
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 31,
+         "name": "Arduino-UNO",
+         "rating": 4,
+         "language": "English",
+         "category": "Electronics",
+         "age": 7
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 1,
+         "name": "Mahou",
+         "rating": 3,
+         "language": "Spanish",
+         "category": "Beer",
+         "age": 18
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 20,
+         "name": "Halo:3",
+         "rating": 3,
+         "language": "English",
+         "category": "Videogames",
+         "age": 16
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 7,
+         "name": "Torrente:El-brazo-tonto-de-la-ley",
+         "rating": 2,
+         "language": "Spanish",
+         "category": "Movies",
+         "age": 18
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 20,
+         "name": "Avengers:La-era-de-Ultron",
+         "rating": 4,
+         "language": "Spanish",
+         "category": "Movies",
+         "age": 12
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 15,
+         "name": "Lovecraft:Cthulhu-Mythos",
+         "rating": 4,
+         "language": "English",
+         "category": "Books",
+         "age": 12
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 15,
+         "name": "Dunkirk",
+         "rating": 4,
+         "language": "English",
+         "category": "Movies",
+         "age": 18
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 5,
+         "name": "Blade-Runner",
+         "rating": 4,
+         "language": "English",
+         "category": "Movies",
+         "age": 16
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 400,
+         "name": "HP-Laptop-High",
+         "rating": 5,
+         "language": "English",
+         "category": "Electronics",
+         "age": 7
+      },
+      {
+         "data": [],
+         "type": "Detail",
+         "price": 15,
+         "name": "Scott-Meyers:Effective-C++",
+         "rating": 5,
+         "language": "English",
+         "category": "Books",
+         "age": 7
+      }
+   ],
+   "type": "Products"
+}

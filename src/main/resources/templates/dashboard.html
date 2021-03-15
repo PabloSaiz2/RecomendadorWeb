@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}">
+    <meta name="viewport"charset="utf-8">
+    <title>Gift Recommender</title>
+  </head>
+  <body>
+    <form th:action="@{/logout}" method="post">
+            <button type="submit" class="btn btn-primary">Logout</button>
+    </form>
+    <p ><a th:href="@{/products}" class="badge badge-primary">Get products</a></p>
+     <p ><a th:href="@{/review/reviews/}+${dashboardParams.currentUserName}" class="badge badge-primary">See reviews</a></p>
+    <div class="d-flex flex-shrink-0 justify-content-center mx-auto w-25 p-3">
+    <img alt="" class = "img-thumbnail"th:src="@{/images/home.png}">
+    </div>
+    <h1 class = "text-center" th:text="${dashboardParams.currentUserName}"></h1>
+    <div class="d-flex flex-column flex-shrink-0 justify-content-center mx-auto w-75 p-3" >
+    <h1>Favorites:</h1>
+    <div class = "overflow-auto" style="max-height: 500px">
+    <table class = table>
+    <thead class = "thead-dark">
+    <tr>
+    <th>Name:</th>
+    <th>Recommend:</th>
+    <th>Delete:</th>
+    </tr>
+    </thead>
+    <th:block th:each="favorite :${dashboardParams.favorites}">
+    <tr>
+    <th>
+    <h1 th:text ="${favorite.username}"></h1>
+    </th>
+    <th>
+    <form class="" action="#" th:action="@{/recommend/favorites/}+${favorite.username}" method="get">
+		<input type="hidden" name = "age" th:value = "*{favorite.questionary.ageUser}"/>
+		<input type="hidden" name = "hobbies" th:value = "*{favorite.questionary.hobbies}"/>
+		<input type="hidden" name = "language" th:value = "*{favorite.questionary.language}"/>
+		<input type="hidden" name = "lower" th:value = "*{favorite.questionary.lowerBound}"/>
+		<input type="hidden" name = "upper" th:value = "*{favorite.questionary.upperBound}"/>
+		<button type="submit" class="btn btn-success">Recommend</button>
+	</form>
+	</th>
+	<th>
+	<form class="" action="#" th:action="@{/dashboard/delete/favorite/}+${favorite.username}" method="post">
+		<button type="submit" class="btn btn-danger">Delete favorite</button>
+	</form>
+	</th>
+	</tr>
+    <th:block>
+    </table>
+    </div>
+    </div>
+    <div class="d-flex justify-content-center mx-auto w-25 p-3" style="background-color: #eee;">
+	<form class="" action="#" th:action="@{/dashboard/users/search}" method="get">
+		<div  th:if="${dashboardParams.successSearch == false}" class="alert alert-warning">
+   		User not found!
+		</div>
+		<input type = "text"  class="form-control" name ="searchedUserName"/>
+		<button type="submit" class="btn btn-primary">Find User</button>
+	</form>
+	
+</div>
+ 
+<div  th:if="${dashboardParams.successSearch==true&&dashboardParams.searched==true}" class="d-flex flex-column justify-content-center mx-auto w-25 p-3" style="background-color: #eee;">
+	<h1 th:text = "${dashboardParams.foundUserName}"></h1>
+	<form class="" action="#" th:object="${dashboardParams}"th:action="@{/recommend/}+${dashboardParams.foundUserName}" method="get">
+		<input type="hidden"th:field = "*{searchedQuestionary.ageUser}"/>
+		<input type="hidden"th:field = "*{searchedQuestionary.hobbies}"/>
+		<input type="hidden"th:field = "*{searchedQuestionary.language}"/>
+		<input type="hidden"th:field = "*{searchedQuestionary.upperBound}"/>
+		<input type="hidden"th:field = "*{searchedQuestionary.lowerBound}"/>
+		<button type="submit" class="btn btn-success">Recommend</button>
+	</form>
+	<div th:if="${dashboardParams.searchedIsFavorite==false}">
+	<form class="" action="#" th:object="${dashboardParams}"th:action="@{/dashboard/users/search}" method="post">
+		<input type="hidden"th:field = "*{foundUserName}"/>
+		<button type="submit" class="btn btn-primary">Add favorite</button>
+	</form>
+	</div>
+</div>
+
+    <div class="d-flex flex-column justify-content-center mx-auto w-25 p-3" style="background-color: #eee;">
+	<h1>Update your questionary:</h1>
+	<form class="" action="#" th:action="@{/dashboard}"
+		th:object="${dashboardParams}" method="post">
+		<div  th:if="${dashboardParams.successUpdate == false}" class="alert alert-danger">
+   		Invalid form
+		</div>
+		<p>Age:</p>
+		<input type="number" class="form-control" th:field="*{currentUserQuestionary.ageUser}" />
+		<p>Hobbies:</p>
+		<input type="text" class="form-control" th:field="*{currentUserQuestionary.hobbies}" /> <small
+			class="form-text text-muted">Please write the hobbies
+			separated by a comma</small>
+		<p>Language:</p>
+		<input type="text" class="form-control" th:field="*{currentUserQuestionary.language}" />
+		<p>Upper bound budget:</p>
+		<input type="number" class="form-control" th:field="*{currentUserQuestionary.upperBound}" />
+		<p>Lower bound budget:</p>
+		<input type="number" class="form-control" th:field="*{currentUserQuestionary.lowerBound}" />
+		<button type="submit" class="btn btn-primary">Update questionary</button>
+	</form>
+	
+</div>
+  </body>
+</html>

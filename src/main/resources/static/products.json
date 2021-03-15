@@ -1,0 +1,212 @@
+{"Products": {
+   "Asimov:Trilogia-de-la-fundacion": {
+      "Category": "Books",
+      "Language": "Spanish",
+      "Price": 31,
+      "Rating": 5,
+      "Age": "+ 12"
+   },
+   "Bloodborne": {
+      "Category": "Videogames",
+      "Language": "English",
+      "Price": 25,
+      "Rating": 4,
+      "Age": "+ 16"
+   },
+   "The-Martian": {
+      "Category": "Movies",
+      "Language": "English",
+      "Price": 7,
+      "Rating": 3,
+      "Age": "+ 7"
+   },
+   "Europa-Universalis-IV": {
+      "Category": "Videogames",
+      "Language": "English",
+      "Price": 20,
+      "Rating": 4,
+      "Age": "+ 12"
+   },
+   "Reverte:Alatriste:Sol-de-Breda": {
+      "Category": "Books",
+      "Language": "Spanish",
+      "Price": 21,
+      "Rating": 4,
+      "Age": "+ 16"
+   },
+   "DOOM": {
+      "Category": "Videogames",
+      "Language": "English",
+      "Price": 14,
+      "Rating": 5,
+      "Age": "+ 18"
+   },
+   "Thomas-Sowell:Economia-Basica": {
+      "Category": "Books",
+      "Language": "Spanish",
+      "Price": 15,
+      "Rating": 3,
+      "Age": "+ 12"
+   },
+   "Starcraft-2": {
+      "Category": "Videogames",
+      "Language": "English",
+      "Price": 15,
+      "Rating": 3,
+      "Age": "+ 12"
+   },
+   "Arduino-UNO": {
+      "Category": "Electronics",
+      "Language": "English",
+      "Price": 31,
+      "Rating": 4,
+      "Age": "+ 7"
+   },
+   "Horizon-Zero-Dawn": {
+      "Category": "Videogames",
+      "Language": "English",
+      "Price": 20,
+      "Rating": 3,
+      "Age": "+ 16"
+   },
+   "Hobbes:Leviathan": {
+      "Category": "Books",
+      "Language": "English",
+      "Price": 31,
+      "Rating": 4,
+      "Age": "+ 18"
+   },
+   "Crusader-Kings-2": {
+      "Category": "Videogames",
+      "Language": "English",
+      "Price": 25,
+      "Rating": 4,
+      "Age": "+ 16"
+   },
+   "Interstellar": {
+      "Category": "Movies",
+      "Language": "English",
+      "Price": 7,
+      "Rating": 4,
+      "Age": "+ 12"
+   },
+   "Avengers:La-era-de-Ultron": {
+      "Category": "Movies",
+      "Language": "Spanish",
+      "Price": 20,
+      "Rating": 4,
+      "Age": "+ 12"
+   },
+   "Torrente:El-brazo-tonto-de-la-ley": {
+      "Category": "Movies",
+      "Language": "Spanish",
+      "Price": 7,
+      "Rating": 2,
+      "Age": "+ 18"
+   },
+   "Dunkirk": {
+      "Category": "Movies",
+      "Language": "English",
+      "Price": 15,
+      "Rating": 4,
+      "Age": "+ 18"
+   },
+   "Blade-Runner": {
+      "Category": "Movies",
+      "Language": "English",
+      "Price": 5,
+      "Rating": 4,
+      "Age": "+ 16"
+   },
+   "El-senior-de-los-anillos:Las-dos-torres": {
+      "Category": "Movies",
+      "Language": "English",
+      "Price": 7,
+      "Rating": 4,
+      "Age": "+ 12"
+   },
+   "Metal-Gear-Solid:Snake-eater": {
+      "Category": "Videogames",
+      "Language": "English",
+      "Price": 20,
+      "Rating": 4,
+      "Age": "+ 16"
+   },
+   "Halo:3": {
+      "Category": "Videogames",
+      "Language": "English",
+      "Price": 20,
+      "Rating": 3,
+      "Age": "+ 16"
+   },
+   "Juan-Pro:La-construccion-del-estado-en-Espania": {
+      "Category": "Books",
+      "Language": "Spanish",
+      "Price": 30,
+      "Rating": 5,
+      "Age": "+ 16"
+   },
+   "Lovecraft:Cthulhu-Mythos": {
+      "Category": "Books",
+      "Language": "English",
+      "Price": 15,
+      "Rating": 4,
+      "Age": "+ 12"
+   },
+   "Scott-Meyers:Effective-C++": {
+      "Category": "Books",
+      "Language": "English",
+      "Price": 15,
+      "Rating": 5,
+      "Age": "+ 7"
+   },
+   "Sony-Alpha-50": {
+      "Category": "Photography",
+      "Language": "English",
+      "Price": 150,
+      "Rating": 4,
+      "Age": "+ 7"
+   },
+   "Paulaner": {
+      "Category": "Beer",
+      "Language": "Spanish",
+      "Price": 2,
+      "Rating": 4,
+      "Age": "+ 18"
+   },
+   "Mahou": {
+      "Category": "Beer",
+      "Language": "Spanish",
+      "Price": 1,
+      "Rating": 3,
+      "Age": "+ 18"
+   },
+"HP-Laptop-High": {
+      "Category": "Electronics",
+      "Language": "English",
+      "Price": 400,
+      "Rating": 5,
+      "Age": "+ 7"
+   },
+   "ASUS-Laptop-Medium": {
+      "Category": "Electronics",
+      "Language": "English",
+      "Price": 220,
+      "Rating": 4,
+      "Age": "+ 7"
+   },
+   "Chip:7400": {
+      "Category": "Electronics",
+      "Language": "English",
+      "Price": 1,
+      "Rating": 3,
+      "Age": "+ 12"
+   },
+   "Sony-TV": {
+      "Category": "Electronics",
+      "Language": "English",
+      "Price": 600,
+      "Rating": 4,
+      "Age": "+ 7"
+   }
+}}

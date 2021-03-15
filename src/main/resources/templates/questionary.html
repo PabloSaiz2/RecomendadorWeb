@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../static/css/bootstrap.css"
+	th:href="@{/css/bootstrap.css}">
+<title>Questionary</title>
+</head>
+<body>
+	<h1>Questionary</h1>
+	<h1 class="text-center">Please complete this form</h1>
+	<div class="d-flex justify-content-center mx-auto w-25 p-3" style="background-color: #eee;">
+	<form class="" action="#" th:action="@{/recommend}"
+		th:object="${questionary}" method="get">
+		<div  th:if="${success == false}" class="alert alert-danger" role="alert">
+   		Invalid form
+		</div>
+		<p>Age:</p>
+		<input type="number" class="form-control" th:field="*{ageUser}" />
+		<p>Hobbies:</p>
+		<input type="text" class="form-control" th:field="*{hobbies}" /> <small
+			class="form-text text-muted">Please write the hobbies
+			separated by a comma</small>
+		<p>Language:</p>
+		<input type="text" class="form-control" th:field="*{language}" />
+		<p>Upper bound budget:</p>
+		<input type="number" class="form-control" th:field="*{upperBound}" />
+		<p>Lower bound budget:</p>
+		<input type="number" class="form-control" th:field="*{lowerBound}" />
+		<button type="submit" class="btn btn-primary">Recommend</button>
+	</form>
+	
+</div>
+</body>
+</html>

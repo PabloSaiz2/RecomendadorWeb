@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}">
+    <title>Recommendation</title>
+  </head>
+  <body>
+    <h1>Recommendation</h1>
+     <a href="/products" class="badge badge-primary">See products</a>
+     <p ><a href="/questionary" class="badge badge-primary">Go to questionary</a></p>
+    <table>
+      <tr>
+        <th><h1>Age:</h1></th>
+        <th th:text="${age}"></th>
+      </tr>
+       <tr>
+        <th><h1>Category:</h1></th>
+        <th th:text="${category}"></th>
+      </tr>
+    </table> 
+    
+   <div  th:if="${success == true}" class="alert alert-success" role="alert">
+   		Recommendation found!
+	</div>
+	
+   <div  th:unless="${success == true}" class="alert alert-warning" role="alert">
+   		Recommendation not found!
+	</div>
+    <div>
+      <table class="table-bordered">
+      <tr>
+      <th>Name:</th>
+      <th>Category:</th>
+      <th>Language:</th>
+      <th>Rating:</th>
+      <th>Age:</th>
+      <th>Price:</th>
+      </tr>
+      <th:block th:each="product :${products}">
+       <tr>
+      <th class="tableRight"><h1 th:text="${product.name}"></h1></th>
+      <th class="tableRight"><h1 th:text="${product.category}"></h1></th>
+      <th class="tableRight"><h1 th:text="${product.language}"></h1></th>
+      <th class="tableRight"><h1 th:text="${product.rating}"></h1></th>      
+      <th class="tableRight"><h1 th:text="${product.age}"></h1></th>    
+      <th class="tableRight"><h1 th:text="${product.price}"></h1></th>
+      </tr>
+        <th:block>
+      </table> 
+    </div>
+  </body>
+</html>

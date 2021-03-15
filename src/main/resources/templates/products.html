@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}">
+    <meta name="viewport"charset="utf-8">
+    <title>Gift Recommender</title>
+  </head>
+  <body>
+     <p ><a href="/dashboard" class="badge badge-primary">Go to dashboard</a></p>
+    <form th:action="@{/logout}" method="post">
+            <button type="submit" class="btn btn-primary">Logout</button>
+        </form>
+    <h1 class="">Products</h1>
+    <div>
+      
+      <table class="table">
+      <thead class = "thead-dark">
+      <tr>
+      <th>ID:</th>
+      <th>Name:</th>
+      <th>Category:</th>
+      <th>Language:</th>
+      <th>Rating:</th>
+      <th>Age:</th>
+      <th>Price:</th>
+      <th>Data:</th>
+      <th>Rate:</th>
+      <th>Review:</th>
+      </tr>
+      </thead>
+      <th:block th:each="product :${products}">
+       <tr>
+      <th class="tableRight"><p th:text="${product.id}"></p></th>
+      <th class="tableRight"><p th:text="${product.name}"></p></th>
+      <th class="tableRight"><p th:text="${product.category}"></p></th>
+      <th class="tableRight"><p th:text="${product.language}"></p></th>
+      <th class="tableRight"><p th:text="${product.rating}"></p></th>      
+      <th class="tableRight"><p th:text="${product.age}"></p></th>    
+      <th class="tableRight"><p th:text="${product.price}"></p></th>
+      <th class="tableRight">
+      <th:block th:each="detail:${product.details}">
+      <p th:text="${detail.name}"></p>
+      <p th:text="${detail.detail}"></p>
+      <th:block>
+      </th>
+      <th class="tableRight">
+      	<p ><a th:href="@{/review/}+${product.name}" class="badge badge-success">Rate product</a></p>
+      </th>
+      <th class="tableRight">
+      	<p ><a th:href="@{/review/reviews/productId/}+${product.id}" class="badge badge-success">See reviews</a></p>
+      </th>
+      
+      </tr>
+        <th:block>
+      </table>    
+    </div>
+  </body>
+</html>
